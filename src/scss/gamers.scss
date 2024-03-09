@@ -1,0 +1,119 @@
+.gamers {
+    padding-top: 50px;
+    padding-bottom: 140px;
+    &__inner {
+        
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__title {
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: uppercase;
+
+    }
+
+    &__slider {
+        
+    }
+    &__slide-nav{
+        
+        top: 0;
+        right: 0;
+        width: 151px;
+        font-family: "Golos Text", "sans-serif";
+        font-size: 18px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 151px;
+        button{
+            width: 44px;
+            height: 44px;
+            background-color: #313131;
+            color: #fff;
+            border-radius: 50%;
+            &:hover{
+                background-color: #FBCE51;
+            }
+            
+        }
+        .gamers__slider-prev svg{
+            transform: translate(-2px, 3px);
+        }
+        .gamers__slider-next svg{
+            transform: translate(2px, 3px);
+        }
+    }
+}
+
+.gamer {
+    font-family: "Golos Text", "sans-serif";
+    text-align: center;
+    max-width: 394px;
+    padding-left: 37px;
+    padding-right: 37px;
+    &__img-container {
+        overflow: hidden;
+
+        border-radius: 100%;
+        width: 320px;
+        height: 320px;
+        margin-bottom: 28px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+    &__status {
+        font-size: 20px;
+        opacity: 0.6;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 20px;
+        border: 1px solid #3057a2;
+        border-radius: 62px;
+        padding: 7px 12px;
+        // width: 113px;
+        // height: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #3057a2;
+        &:hover{
+            background-color: #3057A2;
+            color: #fff;
+        }
+    }
+}
+
+.copy {
+    background-color: #E9DED4;
+    padding-top: 40px;
+    padding-bottom: 72px;
+    font-family: "Golos Text", "sans-serif";
+font-size: 16px;
+opacity: 0.7;
+    &__inner {
+    }
+
+    &__text {
+    }
+}
+
+
