@@ -1,4 +1,11 @@
 .support {
+
+   &__list-mobile-show{
+      display: none;
+   }
+   &__title-mobile-show{
+      display: none;
+   }
    &__inner {
       padding-top: 80px;
       padding-bottom: 150px;
@@ -12,14 +19,15 @@
          max-width: 764px;
       }
    }
+   &__title-red{
+      font-weight: 700;
+      color: #F54932;
+   }
    &__title {
       font-size: 36px;
       text-transform: uppercase;
       line-height: 135%;
-      span{
-         font-weight: 700;
-         color: #F54932;
-      }
+
    }
    &__block2 {
       display: flex;

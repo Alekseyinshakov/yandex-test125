@@ -14,11 +14,37 @@ const gamersNum = document.querySelectorAll('.gamer').length
 
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
+    modules: [Navigation, Pagination],
+    // spaceBetween: 20,
+    loop: true,
+    speed: 500,
+    breakpoints: {
+      1000: {
+        slidesPerView: 2,
+      },
+      1250: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+  const swiper2 = new Swiper('.steps-slider', {
+    slidesPerView: 1,
     modules: [Navigation, Pagination],
     spaceBetween: 20,
     loop: true,
-    speed: 500
+    speed: 500,
+    pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
   });
 
 const $_gamersSliderNav = document.querySelector('.gamers__slide-nav');

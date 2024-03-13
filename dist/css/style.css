@@ -107,6 +107,9 @@ legend {
   min-height: 700px;
   padding-top: 26px;
 }
+.top .top-img {
+  display: none;
+}
 .top__content {
   max-width: 542px;
   margin-top: 62px;
@@ -210,6 +213,12 @@ legend {
   }
 }
 
+.support__list-mobile-show {
+  display: none;
+}
+.support__title-mobile-show {
+  display: none;
+}
 .support__inner {
   padding-top: 80px;
   padding-bottom: 150px;
@@ -223,14 +232,14 @@ legend {
 .support__block1 .support__title {
   max-width: 764px;
 }
+.support__title-red {
+  font-weight: 700;
+  color: #F54932;
+}
 .support__title {
   font-size: 36px;
   text-transform: uppercase;
   line-height: 135%;
-}
-.support__title span {
-  font-weight: 700;
-  color: #F54932;
 }
 .support__block2 {
   display: flex;
@@ -287,12 +296,17 @@ legend {
   font-size: 20px;
 }
 
+.steps-slider {
+  display: none;
+}
+
 .steps {
   padding-top: 50px;
   padding-bottom: 150px;
 }
 .steps__inner {
   position: relative;
+  overflow: hidden;
 }
 .steps__inner .plane {
   position: absolute;
@@ -356,10 +370,54 @@ legend {
 .steps-item:nth-child(7) {
   grid-column: span 2;
 }
+.steps .swiper-pagination {
+  position: static;
+  transform: translateY(20px);
+  height: 60px;
+}
+.steps .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+.steps .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #313131;
+}
+.steps .steps-nav {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.steps .steps-nav button {
+  width: 44px;
+  height: 44px;
+  background-color: #313131;
+  color: #fff;
+  border-radius: 50%;
+}
+.steps .steps-nav button:hover {
+  background-color: #FBCE51;
+}
+.steps .steps-nav .swiper-button-prev svg {
+  transform: translate(-2px, 3px);
+}
+.steps .steps-nav .swiper-button-next svg {
+  transform: translate(2px, 3px);
+}
+.steps .swiper-button-next, .steps .swiper-button-prev {
+  position: static;
+  transform: translateY(-24px);
+  flex-basis: content;
+}
+.steps .swiper-button-next::after, .steps .swiper-button-prev::after {
+  content: "";
+}
 
 .gamers {
   padding-top: 50px;
   padding-bottom: 140px;
+}
+.gamers__inner {
+  position: relative;
 }
 .gamers__top {
   display: flex;
@@ -401,6 +459,7 @@ legend {
 }
 
 .gamer {
+  margin: 0 auto;
   font-family: "Golos Text", "sans-serif";
   text-align: center;
   max-width: 394px;
@@ -462,4 +521,213 @@ body {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 72px;
+}
+
+@media (max-width: 1360px) {
+  .steps__inner .plane {
+    bottom: 0;
+    top: -20px;
+  }
+  .steps-item {
+    display: block;
+  }
+  .steps-item__num {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1250px) {
+  .support__block2 .support__title {
+    max-width: 764px;
+  }
+  .support__block2 img {
+    margin-left: auto;
+  }
+  .support-img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .support__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .support__mobile-hide {
+    display: none;
+  }
+  .support__title-mobile-show {
+    display: block;
+  }
+  .support__block1 {
+    display: block;
+  }
+  .support__block2 {
+    display: block;
+  }
+  .top__content {
+    margin-top: 40px;
+  }
+  .top__title {
+    font-size: 36px;
+  }
+  .top__text {
+    margin-bottom: 32px;
+  }
+  .top__links {
+    display: block;
+  }
+  .top__links a {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .gamers {
+    padding-bottom: 200px;
+  }
+  .gamers__title {
+    font-size: 36px;
+  }
+  .gamers__top {
+    margin-bottom: 40px;
+  }
+  .gamers__slide-nav {
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .steps {
+    padding-bottom: 70px;
+  }
+  .steps__grid {
+    display: none;
+  }
+  .steps-slider {
+    display: block;
+    margin-top: 148px;
+  }
+  .steps-slider__item {
+    min-height: 300px;
+  }
+  .steps-slider__item-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+  .steps__title-inner {
+    font-size: 36px;
+    float: none;
+    display: block;
+  }
+  .steps__inner .plane {
+    right: 0;
+    top: 80px;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    padding: 0 19px;
+  }
+}
+@media (max-width: 650px) {
+  .gamer {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .support__inner {
+    padding-bottom: 70px;
+  }
+  .steps-slider__item {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
+  .steps__inner .plane {
+    top: 110px;
+    z-index: 10;
+  }
+  .steps__subtitle {
+    font-size: 18px;
+  }
+  .steps__subtitle br {
+    display: none;
+  }
+  .support__info {
+    margin-top: 44px;
+  }
+  .support__inner {
+    padding-top: 48px;
+  }
+  .support__adress {
+    font-size: 18px;
+  }
+  .support__title {
+    font-size: 28px;
+  }
+  .support__list-mobile-show-inline {
+    display: inline !important;
+    margin-right: 10px;
+  }
+  .support__list-mobile-show {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .support__info-list:first-child {
+    display: none;
+  }
+  .support__info-list li {
+    border-left: none !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .support__info {
+    display: block;
+  }
+  .running-line {
+    height: 38px;
+    font-size: 16px;
+    margin-top: -20px;
+  }
+  .running-line-top {
+    margin-top: -35px;
+  }
+  .logo {
+    width: 213px;
+  }
+  .top {
+    background-image: url("../img/top/top-bg-mobile1.jpg");
+    min-height: 812px;
+  }
+  .top__title {
+    margin-bottom: 21px;
+  }
+  .top__text {
+    margin-bottom: 27px;
+    text-align: left;
+  }
+  .top__links a {
+    width: auto;
+    padding: 0px 30px;
+    height: 47px;
+  }
+  .top__links a:last-child {
+    background: #fff;
+    opacity: 0.9;
+    border: none;
+  }
+}
+@media (max-width: 506px) {
+  .steps__inner .plane {
+    top: 156px;
+  }
+  .steps-slider__item {
+    font-size: 18px;
+  }
+}
+@media (max-width: 390px) {
+  .steps__inner .plane {
+    top: 203px;
+  }
 }

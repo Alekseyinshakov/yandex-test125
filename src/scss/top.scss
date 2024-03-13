@@ -1,4 +1,7 @@
 .top {
+  .top-img{
+    display: none;
+  }
   background-image: url("../img/top/top-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +13,7 @@
   &__content {
     max-width: 542px;
     margin-top: 62px;
+
   }
   &__title {
     font-size: 60px;

@@ -1,0 +1,225 @@
+@media (max-width: 1360px) {
+    .steps__inner .plane {
+        bottom: 0;
+        top: -20px;
+    }
+    .steps-item{
+        display: block;
+    }
+    .steps-item__num{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .support__block2 .support__title {
+        max-width: 764px;
+    }
+    .support__block2 img {
+        margin-left: auto; 
+    }
+    .support-img{
+        margin: 0 auto;
+    display: block;
+    margin-bottom: 24px;
+    }
+    .support__title{
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .support__mobile-hide{
+        display: none;
+    }
+    .support__title-mobile-show{
+        display: block;
+    }
+
+    .support__block1{
+        display: block;
+    }
+    .support__block2{
+        display: block;
+    }
+    .top__content {
+        margin-top: 40px;
+    }
+    .top__title {
+        font-size: 36px;
+    }
+    .top__text {
+        margin-bottom: 32px;
+    }
+    .top__links {
+        display: block;
+        a {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .gamers{
+        padding-bottom: 200px;
+    }
+    .gamers__title{
+        font-size: 36px;
+    }
+    .gamers__top{
+        margin-bottom: 40px;
+    }
+    .gamers__slide-nav{
+        position: absolute;
+        top: 620px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .steps{
+        padding-bottom: 70px;
+    }
+    .steps__grid{
+        display: none;
+    }
+    .steps-slider{
+        display: block;
+        margin-top: 148px;
+     }
+     .steps-slider__item{
+        min-height: 300px;
+     }
+     .steps-slider__item-row{
+        display: flex;
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+    .steps__title-inner{
+        font-size: 36px;
+        float: none;
+        display: block;
+    }
+    .steps__inner .plane{
+        right: 0;
+        top: 80px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 0 19px;
+     }
+}
+
+@media (max-width: 650px) {
+    .gamer{
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .support__inner{
+        padding-bottom: 70px;
+    }
+    .steps-slider__item{
+        padding-top: 62px;
+        padding-bottom: 0;
+    }
+    .steps__inner .plane {
+        top: 110px;
+        z-index: 10;
+    }
+    .steps__subtitle{
+        font-size: 18px;
+        br{
+            display: none;
+        }
+    }
+    .support__info{
+        margin-top: 44px;
+    }
+    .support__inner{
+        padding-top: 48px;
+    }
+    .support__adress{
+        font-size: 18px;
+    }
+    .support__title{
+        font-size: 28px;
+    }
+    .support__list-mobile-show-inline{
+        display: inline !important;
+        margin-right: 10px;
+    }
+    .support__list-mobile-show{
+        display: block;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    .support__info-list{
+        &:first-child{
+            display: none;
+        }
+        li{
+            border-left: none !important;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .support__info{
+        display: block;
+
+    }
+    
+    .running-line{
+        height: 38px;
+        font-size: 16px;
+        margin-top: -20px;
+        &-top{
+            margin-top: -35px;
+        }
+    }
+
+     .logo{
+        width: 213px;
+     }
+    .top{
+        background-image: url('../img/top/top-bg-mobile1.jpg');
+        
+        min-height: 812px;
+    }
+    .top__title{
+        margin-bottom: 21px;
+    }
+    .top__text{
+        margin-bottom: 27px;
+        text-align: left;
+    }
+    .top__links {
+        a {
+            width: auto;
+            padding: 0px 30px;
+            height: 47px;
+            &:last-child {
+                background: #fff;
+                opacity: 0.9;
+                border: none;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 506px) {
+    .steps__inner .plane {
+        top: 156px;
+    }
+    .steps-slider__item{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .steps__inner .plane {
+        top: 203px;
+    }
+}

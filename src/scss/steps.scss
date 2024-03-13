@@ -1,9 +1,14 @@
+.steps-slider{
+   display: none;
+}
+
 .steps {
    padding-top: 50px;
    padding-bottom: 150px;
 
    &__inner {
       position: relative;
+      overflow: hidden;
       .plane {
          position: absolute;
          right: -55px;
@@ -72,4 +77,48 @@
          grid-column: span 2;
       }
    }
+   .swiper-pagination{
+      position: static;
+      transform: translateY(20px);
+      height: 60px;
+      .swiper-pagination-bullet{
+         width: 10px;
+         height: 10px;
+      }
+      .swiper-pagination-bullet-active{
+         background-color: #313131;
+      }
+   }
+   .steps-nav{
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+      button{
+         width: 44px;
+         height: 44px;
+         background-color: #313131;
+         color: #fff;
+         border-radius: 50%;
+         &:hover{
+             background-color: #FBCE51;
+         }
+         
+     }
+     .swiper-button-prev svg{
+         transform: translate(-2px, 3px);
+     }
+     .swiper-button-next svg{
+         transform: translate(2px, 3px);
+     }
+   }
+
+   .swiper-button-next, .swiper-button-prev{
+      position: static;
+      transform: translateY(-24px);
+      &::after{
+         content: "";
+      }
+      flex-basis: content;
+   }
+   
 }
